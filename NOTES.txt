@@ -1,0 +1,20 @@
+Midi : 31250 bits/s
+
+Step-Down : max load 600mA
+		Efficiency : 90-95% 5V to 3V3/100-600mA :
+
+	Consumption (3.3V):
+		Battery charger : 0.028 - 2.5 mA
+		MIDI DSP : 18mA / 30mW amp
+		Amp: P=I*0.3 I=0.3/P I=40mA/P=0.12W I=50mA/P=0.15W I=100mA/P=0.3W - I=200mA/P=0.6W
+		CPU : 40mA
+			USB: 0.02645 * 168 = 4.4 mA
+			RNG: 0.0015 * 168 =  0.25 mA
+			USART2 (MIDI): 0.00269 * 168 = 0.45 mA
+			SPI1 (screen) : 0.00132 * 168 = 0.22 mA
+
+	Total (without amp): ~ 70mA
+
+
+	POUT = Vout * Iout / Eff
+	I=P/U
