@@ -1,0 +1,3 @@
+[submodule "ccgmusic"]
+	path = ccgmusic
+	url = git://github.com/julbouln/ccgmusic.git
